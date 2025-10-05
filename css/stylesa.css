@@ -1,0 +1,56 @@
+/* styles.css */
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+/* Paleta 3: Atardecer en Pucara */
+:root {
+    --color-volcanico: #1C1C1C;
+    --color-blanco-suave: #FAFAFA;
+    --color-terracota: #E07A5F;
+    --color-arena-fria: #DDBEA9;
+    --color-azul-profundo: #3D405B;
+  }
+  
+  /* Reset básico */
+  body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* Header con gradiente */
+  .masthead {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--color-volcanico), var(--color-terracota));
+    color: var(--color-blanco-suave);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Botón principal */
+  .btn-primary {
+    background-color: var(--color-terracota);
+    border: none;
+    color: var(--color-blanco-suave);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c9654d;
+  }
+  
